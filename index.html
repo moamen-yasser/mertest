@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENARINI Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="lineHead">
+                <img src="images/Group 2091.svg" alt="" />
+            </div>
+        </div>
+
+        <div class="mainsec midsec">
+            <div >
+                <a href="pdfs/Nebilet plus 5-12.5 mg -SMPC.pdf" download class="image-container">
+                    <img src="images/white12.5.svg" alt="" class="image-default" id="hover-image"/>
+                </a>
+            </div>
+            <div>
+                <a href="pdfs/Nebilet plus  5-25 mg - SMPC.pdf" download>
+                    <img src="images/white25.svg" alt="" id="hover-image2" />
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="lineFooter">
+                <img src="images/Group 2093.svg" alt="" />
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const image = document.getElementById('hover-image');
+        image.addEventListener('mouseover', () => {
+            image.src = 'images/dark12.5.svg';
+        });
+        image.addEventListener('mouseout', () => {
+            image.src = 'images/white12.5.svg';
+        });
+
+        const image2 = document.getElementById('hover-image2');
+        image2.addEventListener('mouseover', () => {
+            image2.src = 'images/dark25.svg';
+        });
+        image2.addEventListener('mouseout', () => {
+            image2.src = 'images/white25.svg';
+        });
+    </script>
+
+</body>
+</html>

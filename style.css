@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html{
+    height: 100%;
+    height: webkit-fill-available !important;
+    overflow-x: hidden !important;
+}
+body{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: webkit-fill-available;
+    overflow: hidden !important;
+}
+.container{
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #FFFFFF, #E3E1E1);
+}
+/*==============================================================*/
+.lineHead{
+    width: 100%;
+    height: 100vh;
+}
+.lineHead img{
+    width: 100%;
+    height:100%;
+}
+.lineFooter{
+    width: 100%;
+    height: 100%;
+}
+.lineFooter img{
+    width: 100%;
+    height:100%;
+}
+/*==============================================================*/
+.midsec{
+    margin-top: 200px;
+    width: 100%;
+    height: 900px;
+    background-image: url(/images/bg\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15% 80%;
+}
+/*==============================================================*/
+.mainsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    margin-bottom: 250px;
+}
+.mainsec img{
+    width: 600px;
+    cursor: pointer;
+}
+/*==============================================================*/
+
+@media (max-width: 400px){
+    .lineHead {
+        height: 250px; 
+    }
+    .midsec{
+        margin-top: 50px;
+        height: 500px;
+        background-position: 20% 80%;
+    }
+    .mainsec{
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+    .mainsec img{
+        width: 300px;
+    }
+}
+/*==============================================================*/
+@media (min-width:401px) and (max-width: 500px){
+    .lineHead {
+        height: 350px; 
+    }
+    .midsec{
+        margin-top: 170px;
+        height: 500px;
+        background-position: 20% 80%;
+    }
+    .mainsec{
+        gap: 16px;
+        margin-bottom: 150px;
+    }
+    .mainsec img{
+        width: 400px;
+    }
+}
+@media (min-width:501px) and (max-width: 600px){
+    .lineHead {
+        height: 360px; 
+    }
+    .midsec{
+        margin-top: 250px;
+        height: 500px;
+        background-position: 20% 80%;
+    }
+    .mainsec{
+        gap: 16px;
+        margin-bottom: 250px;
+    }
+    .mainsec img{
+        width: 500px;
+    }
+}
